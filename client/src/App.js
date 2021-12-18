@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Layout from './components/Layout'
-import { BrowserRouter, Routes, Route, Link, HashRouter } from 'react-router-dom'
+import LayoutPage from './components/LayoutPage'
+import { Routes, Route, Link, HashRouter } from 'react-router-dom'
 import HomePage from './components/pages/HomePage'
 import MatchingPage from './components/pages/MatchingPage'
 import OnboardingPage from './components/pages/OnboardingPage'
@@ -10,7 +10,7 @@ import logo from './logo.svg'
 const App = () => {
     return (
         <>
-            <Layout>
+            <LayoutPage>
                 <HashRouter>
                     <div className='main-container'>
                         <div className='nav-drawer'>
@@ -32,7 +32,7 @@ const App = () => {
                         </div>
                     </div>
                 </HashRouter>
-            </Layout>
+            </LayoutPage>
         </>
     )
 }
