@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet';
-import "../stylesheets/layout.css"
+import "../layout.css"
 
 const Layout = ({ children }) => {
     return (

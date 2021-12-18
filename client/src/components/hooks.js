@@ -1,9 +1,10 @@
-const MENTEE_URL = "127.0.0.1:8080/mentees"
+const MENTEE_URL = "http://140.238.139.88:9087/mentees?email=ant.bondarev@gmail.com"
 
 export const getMentees = async (email) => {
     try {
         const response = await fetch(
-            "/mentees?email=aarushirgupta%40gmail.com"
+            // `${MENTEE_URL}?email=${email}`
+            MENTEE_URL
         );
         const body = await response.json();
         console.log(body)
