@@ -1,6 +1,26 @@
 import * as React from 'react'
+import { useState, useEffect } from 'react'
+import { getMentees } from '../components/hooks'
 
 const MatchingPage = () => {
+    const [email, setEmail] = useState("")
+    const [accessCode, setAccessCode] = useState("")
+    const [mentees, setMentees] = useState([])
+
+    function handleClick() {
+        async function retrieveMentees() {
+            const response = await getMentees(email)
+            if (response != undefined) {
+                setMentees(response)
+            } else {
+                alert("Invalid credentials")
+                setEmail("")
+                setAccessCode("")
+            }
+        }
+        retrieveMentees()
+    }
+
     return (
         <>
             <h2>Mentor-Mentee Matchings</h2>
@@ -11,15 +31,19 @@ const MatchingPage = () => {
                 <li>Access number received through your email</li>
             </ol>
 
-            <form className="matching-form">
-                <label for="email">Email</label>
-                <input className="input-form" id="email"></input>
+            <div className="matching-form">
+                <p>Email</p>
+                <input value={email} onChange={(e) => setEmail(e.target.value)} className="input-form" id="email"></input>
 
-                <label for="access">Access Number</label>
-                <input className="input-form" id="access"></input>
+                <p>Access Number</p>
+                <input value={accessCode} onChange={(e) => setAccessCode(e.target.value)} className="input-form" id="access"></input>
 
-                <button className="button-form">Submit</button>
-            </form>
+                <button onClick={() => handleClick()} className="button-form" disabled={!(email && accessCode)} >Submit</button>
+            </div>
+
+            {mentees.map((mentee, index) => {
+                return (<p key={index}>{ mentee.email }</p>)
+            })}
 
         </>
     )

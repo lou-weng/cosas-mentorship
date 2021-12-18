@@ -86,10 +86,9 @@ h1 {
     background-color: #254A5D;
     color: white;
     border-radius: 10px;
-    border: none;
     font-family: overpass;
 }
 
-.button-form:hover {
-    opacity: 70%;
+.button-form:disabled {
+    background-color: grey;
 }
