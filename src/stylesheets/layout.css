@@ -1,0 +1,95 @@
+:root {
+    --main: #254A5D;
+    --secondary-green: #7BCCD4;
+    --secondary-pink: #C7518F;
+    --tertiary: #F7F6EE
+}
+
+body {
+    font-family: "overpass";
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: var(--main);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: row;
+    height: 100%;
+    width: 60%
+}
+
+.content-container {
+    padding: 2%;
+    width: 75%
+}
+
+.nav-drawer {
+    display: flex;
+    min-height: 100vh;
+    width: 20%;
+    flex-direction: column;
+    padding: 1%;
+    border-right: 1px solid lightgray
+}
+
+.drawer-button {
+    margin: 1%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.drawer-button:hover {
+    background-color: var(--tertiary);
+    color: var(--secondary-green)
+}
+
+.mentor-form {
+    background-color: #C7518F;
+    padding: 1%;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.mentor-form:hover {
+    opacity: 70%;
+}
+
+.matching-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%
+}
+
+.input-form {
+    font-size: medium;
+    margin-top: 5px
+}
+
+.logo {
+    width: 90%
+}
+
+.button-form {
+    margin-top: 2%;
+    font-size: medium;
+    width: 30%;
+    background-color: #254A5D;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: overpass;
+}
+
+.button-form:hover {
+    opacity: 70%;
+}
