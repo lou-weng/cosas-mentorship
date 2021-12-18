@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { getMentees } from '../hooks'
 
 const MatchingPage = () => {
@@ -9,7 +9,7 @@ const MatchingPage = () => {
     function handleClick() {
         async function retrieveMentees() {
             const response = await getMentees(email)
-            if (response != undefined) {
+            if (response !== undefined) {
                 setMentees(response)
             } else {
                 alert("Invalid credentials")
@@ -22,12 +22,7 @@ const MatchingPage = () => {
     return (
         <>
             <h2>Mentor-Mentee Matchings</h2>
-            <p>Please use this tool to get the contact information of your mentees. You will need two things:</p>
-
-            <ol>
-                <li>Your email</li>
-                <li>Access number received through your email</li>
-            </ol>
+            <p>Please use this tool to get the contact information of your mentees.</p>
 
             <div className="matching-form">
                 <p>Email</p>
