@@ -14,7 +14,7 @@ const App = () => {
                 <HashRouter>
                     <div className='main-container'>
                         <div className='nav-drawer'>
-                            <img className="logo" src={logo}></img>
+                            <img className="logo" alt="CSMP logo"src={logo}></img>
                             <Link to="home" className='drawer-button'>Home</Link>
                             <Link to="onboarding" className='drawer-button'>Onboarding</Link>
                             <Link to="matching" className='drawer-button'>Matching</Link>
