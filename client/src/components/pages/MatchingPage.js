@@ -25,16 +25,37 @@ const MatchingPage = () => {
             <p>Please use this tool to get the contact information of your mentees.</p>
 
             <div className="matching-form">
-                <p>Email</p>
+                <span><b>Enter Your Email</b></span>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} className="input-form" id="email"></input>
 
                 <button onClick={() => handleClick()} className="button-form" disabled={!email} >Submit</button>
             </div>
-
-            {mentees.map((mentee, index) => {
-                return (<p key={index}>{ mentee.email }</p>)
-            })}
-
+            { mentees.length > 0 && <div className="table-container">
+                <table className="mentee-table">
+                    <tr className="table-header">
+                        <th>Email</th>
+                        <th>Name</th>
+                        <th>Year</th>
+                        <th>Specialization</th>
+                        <th>Interest 1</th>
+                        <th>Interest 2</th>
+                        <th>Interest 3</th>
+                    </tr>
+                    {mentees.map((mentee, index) => {
+                        return (
+                            <tr key={index}>
+                                <th>{mentee.email}</th>
+                                <th>{mentee.firstName}</th>
+                                <th>{mentee.year}</th>
+                                <th>{mentee.specialization}</th>
+                                <th>{mentee.ranking1}</th>
+                                <th>{mentee.ranking2}</th>
+                                <th>{mentee.ranking3}</th>
+                            </tr>
+                        )
+                    })}
+                </table>
+            </div> }
         </>
     )
 }
