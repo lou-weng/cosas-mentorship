@@ -1,4 +1,4 @@
-const MENTEE_URL = "http://140.238.139.88:9087/mentees"
+const MENTEE_URL = "https://140.238.139.88:9087/mentees"
 
 export const getMentees = async (email) => {
     try {

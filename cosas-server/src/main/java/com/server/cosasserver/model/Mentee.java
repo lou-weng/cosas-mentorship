@@ -1,4 +1,4 @@
-package com.cosas.cosas.model;
+package com.server.cosasserver.model;
 
 public class Mentee {
 

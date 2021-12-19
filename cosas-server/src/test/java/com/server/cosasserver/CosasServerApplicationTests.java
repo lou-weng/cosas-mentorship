@@ -1,10 +1,10 @@
-package com.cosas.cosas;
+package com.server.cosasserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CosasApplicationTests {
+class CosasServerApplicationTests {
 
 	@Test
 	void contextLoads() {

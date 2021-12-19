@@ -1,6 +1,6 @@
-package com.cosas.cosas;
+package com.server.cosasserver;
 
-import com.cosas.cosas.repository.MenteeRepository;
+import com.server.cosasserver.repository.MenteeRepository;
 
 import org.springframework.context.annotation.Bean;
 

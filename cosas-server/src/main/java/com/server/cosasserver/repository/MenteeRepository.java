@@ -1,10 +1,10 @@
-package com.cosas.cosas.repository;
+package com.server.cosasserver.repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.cosas.cosas.model.Mentee;
+import com.server.cosasserver.model.Mentee;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
