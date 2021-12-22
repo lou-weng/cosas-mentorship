@@ -56,6 +56,15 @@ const MatchingPage = () => {
                     })}
                 </table>
             </div> }
+
+            <h4>&#9888; There is an undersupply of BUCS/BTM/Finance/Marketing mentors</h4>
+            <p>Some mentors in those fields can expect a maximum of 5 mentees assigned to them. If the commitment and workload is too much, please let COSAS know immediately</p>
+            <h4>&#9888; There is an oversupply of Accounting mentors</h4>
+            <p>Some mentors may have as few as 2 mentees for the semester. If both opt out of the program anytime during the semester, please contact COSAS immediately</p>
+            
+
+            <h3>Introduction Emails</h3>
+            <a href="https://docs.google.com/document/d/1vwDgu-mNdyuUy0KTZUpZcpf9NcGBbFUxmyG5jsaLqKU/edit?usp=sharing">Mentor Email Template and Instructions</a>
         </>
     )
 }
