@@ -9,7 +9,7 @@ const MatchingPage = () => {
     function handleClick() {
         async function retrieveMentees() {
             const response = await getMentees(email)
-            if (response !== undefined && response.length != 0) {
+            if (response !== undefined && response.length !== 0) {
                 setMentees(response)
             } else {
                 alert("Invalid credentials")
