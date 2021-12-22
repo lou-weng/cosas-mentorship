@@ -3,7 +3,7 @@ const MENTEE_URL = 'https://ga5f5e6db3409ad-db202112171830.adb.ca-toronto-1.orac
 export const getMentees = async (email) => {
     try {
         const response = await fetch(
-            `${MENTEE_URL}?email=${email.toLowerCase()}`
+            `${MENTEE_URL}?email=${email.toLowerCase().trim()}`
         );
         const body = await response.json();
         console.log(body)
