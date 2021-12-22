@@ -21,12 +21,12 @@ h1 {
   margin: 0 auto;
   flex-direction: row;
   height: 100%;
-  width: 60%
+  width: 60%;
 }
 
 .content-container {
   padding: 2%;
-  width: 75%
+  width: 75%;
 }
 
 .nav-drawer {
@@ -35,7 +35,7 @@ h1 {
   width: 20%;
   flex-direction: column;
   padding: 1%;
-  border-right: 1px solid lightgray
+  border-right: 1px solid lightgray;
 }
 
 .drawer-button {
@@ -84,7 +84,7 @@ h1 {
   margin-top: 3%;
   margin-bottom: 3%;
   font-size: medium;
-  width: 30%;
+  white-space: auto;
   background-color: var(--secondary-pink);
   color: white;
   border-radius: 10px;
@@ -116,4 +116,33 @@ tr, th {
   color: white;
   padding-left: 25px;
   text-align: center;
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    width: 100%;
+  }
+
+  .nav-drawer {
+    position: sticky;
+    z-index: 10;
+    background-color: white;
+    width: 40%;
+    padding: 25px
+  }
+
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    width: 80%;
+  }
+
+  .nav-drawer {
+    position: sticky;
+    z-index: 10;
+    background-color: white;
+    width: 30%;
+    padding: 25px
+  }
 }

@@ -1,4 +1,4 @@
-const MENTEE_URL = "https://140.238.139.88:9087/mentees"
+const MENTEE_URL = 'https://ga5f5e6db3409ad-db202112171830.adb.ca-toronto-1.oraclecloudapps.com/ords/admin/match/match' 
 
 export const getMentees = async (email) => {
     try {
@@ -7,7 +7,7 @@ export const getMentees = async (email) => {
         );
         const body = await response.json();
         console.log(body)
-        return body;
+        return body.items;
     } catch (err) {
         return undefined;
     }

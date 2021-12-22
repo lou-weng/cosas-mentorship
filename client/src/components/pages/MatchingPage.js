@@ -44,13 +44,13 @@ const MatchingPage = () => {
                     {mentees.map((mentee, index) => {
                         return (
                             <tr key={index}>
-                                <th>{mentee.email}</th>
-                                <th>{mentee.firstName}</th>
+                                <th>{mentee.e_mail}</th>
+                                <th>{mentee.preferred_name}</th>
                                 <th>{mentee.year}</th>
                                 <th>{mentee.specialization}</th>
-                                <th>{mentee.ranking1}</th>
-                                <th>{mentee.ranking2}</th>
-                                <th>{mentee.ranking3}</th>
+                                <th>{mentee.ranking_1}</th>
+                                <th>{mentee.ranking_2}</th>
+                                <th>{mentee.ranking_3}</th>
                             </tr>
                         )
                     })}
